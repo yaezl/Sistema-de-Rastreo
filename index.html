@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar nuevo vehículo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #0c0c0c;
+            color: white;
+            padding: 50px;
+            font-size: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .nav-item {
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: #1a1a2e;
+            padding: 50px;
+        }
+
+        .header {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #0a0a0a;
+            border: 1px solid #a0a0a7;
+            border-radius: 10px;
+            padding: 80px;
+            margin-top: 50px;
+        }
+
+        .card-title {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #b3a5a5;
+            border-radius: 4px;
+            background-color: #eeeef8;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+
+        .btn {
+            padding: 8px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 100%;
+        }
+
+        .btn-primary {
+            background-color: #bebfe4;
+            color: rgb(63, 52, 52);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        #ingresar-vehiculo {
+            margin-top: auto;
+            background-color: #a0a0a7;
+            color: #fff8f8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span>Sist. Rastreo</span>
+        </div>
+        <nav>
+            <div class="nav-item">Inicio</div>
+            <div class="nav-item">Reportes</div>
+            <div class="nav-item">Monitoreo</div>
+            <div class="nav-item">Ingresar Personal</div>
+            <div class="nav-item btn btn-outline" id="ingresar-vehiculo">Ingresar vehículo</div>
+            <div class="nav-item">Cerrar Sesión</div>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1 class="header">Ingresar nuevo vehículo</h1>
+        <div class="card">
+            <h2 class="card-title">Datos del Vehículo</h2>
+            <form>
+                <div class="form-group">
+                    <label for="patente">Patente:</label>
+                    <input type="text" id="patente" name="patente">
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo">
+                </div>
+                <div class="actions">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
